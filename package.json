@@ -4,6 +4,7 @@
   "scripts": {
     "build": "prisma generate && remix build",
     "dev": "remix dev",
+    "postinstall": "prisma generate",
     "typecheck": "tsc"
   },
   "dependencies": {
