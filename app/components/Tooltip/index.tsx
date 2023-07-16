@@ -13,7 +13,7 @@ const Tooltip = (props: TooltipProps) => {
     <a 
       role="link" 
       aria-label={measurementKey} 
-      className="focus:outline-none focus:ring-gray-300 rounded-full focus:ring-offset-2 focus:ring-2 focus:bg-gray-200" 
+      className="rounded-full focus:outline-none focus:ring-gray-300 focus:ring-offset-2 focus:ring-2 focus:bg-gray-200" 
       onMouseOver={() => setState(true)} 
       onFocus={() => setState(true)}  
       onMouseOut={() => setState(false)}
@@ -31,8 +31,8 @@ const Tooltip = (props: TooltipProps) => {
           <div 
             id={measurementKey} 
             role="tooltip" 
-            className="absolute z-20 transition duration-150 ease-in-out shadow-lg bg-white p-4 rounded">
-            <p className="text-xs leading-4 text-gray-600 pb-3 italic">{tip}</p>
+            className="absolute z-20 p-4 transition duration-150 ease-in-out bg-white rounded shadow-lg">
+            <p className="pb-3 text-xs italic leading-4 text-gray-600">{tip}</p>
         </div>
         }
     </a>

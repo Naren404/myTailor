@@ -2,19 +2,19 @@ import { Link } from "@remix-run/react"
 import Container from "../Container"
 
 const Footer = () => {
-  return ( 
-    <footer className="py-20 md:py-40">
+  return (
+    <footer className="py-10">
       <Container>
         <div className="m-auto md:w-10/12 lg:w-8/12 xl:w-6/12">
           <div className="flex flex-wrap items-center justify-between md:flex-nowrap">
-            <div className="flex w-full justify-center space-x-12 text-gray-600 dark:text-gray-300 sm:w-7/12 md:justify-start">
-              <ul className="list-inside list-disc space-y-8">
+            <div className="flex justify-center w-full space-x-12 text-gray-600 dark:text-gray-300 sm:w-7/12 md:justify-start">
+              <ul className="space-y-4 list-disc list-inside">
                 <li><Link to="/" className="transition hover:text-primary">HOME</Link></li>
     
                 <li><Link to="/about" className="transition hover:text-primary">ABOUT</Link></li>
               </ul>
     
-              <ul role="list" className="space-y-8">
+              <ul role="list" className="space-y-4">
                 <li>
                   <Link to="#" className="flex items-center space-x-3 transition hover:text-primary">
                     <svg
@@ -66,7 +66,7 @@ const Footer = () => {
               </ul>
             </div>
 
-            <div className="m-auto mt-16 w-10/12 space-y-6 text-center sm:mt-auto sm:w-5/12 sm:text-left">
+            <div className="w-10/12 m-auto mt-16 space-y-6 text-center sm:mt-auto sm:w-5/12 sm:text-left">
               <span className="block text-gray-500 dark:text-gray-400">We change the way wear clothes.</span>
     
               <span className="block text-gray-500 dark:text-gray-400">myTailor &copy; <span id="year"></span></span>
@@ -83,7 +83,7 @@ const Footer = () => {
           </div>
         </div>
       </Container>
-</footer>
+    </footer>
    )
 }
  

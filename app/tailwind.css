@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .title {
+    @apply text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl
+  }
+
+  .sub-title {
+    @apply text-sm font-semibold leading-tight text-black
+  }
+
+  #toggle_nav:checked ~ div #hamburger #line
+  {
+      @apply rotate-45 translate-y-1.5 
+  }
+
+  #toggle_nav:checked ~ div #hamburger #line2
+    {
+        @apply -rotate-45 -translate-y-1
+    }
+}
